@@ -45,6 +45,7 @@ class BlogController extends Controller
             throw $this->createNotFoundException('The post does not exist');
         }
 
+        
         return $this->render('blog/show.html.twig', ['post' => $post]);
     }
 
